@@ -5,10 +5,12 @@
 #Otherwise output the number itself.
 
 (1..100).each do |i|
-  if i % 3 == 0
+  if (i % 3 == 0 && i % 5 == 0)
     puts "Bit"
   elsif i % 5 == 0
     puts "Maker"
+  elsif i % 3 == 0
+    puts "bitmaker"
   else
     puts i
   end
